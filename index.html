@@ -3,23 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirect</title>
-  <script>
-    // tenta pegar variante salva
-    let variant = localStorage.getItem("ab-test");
+<script>
+  let variant = localStorage.getItem("ab-test");
 
-    // se não tiver, sorteia
-    if (!variant) {
-      variant = Math.random() < 0.5 ? "A" : "B";
-      localStorage.setItem("ab-test", variant);
-    }
+  if (!variant) {
+    variant = Math.random() < 0.5 ? "A" : "B";
+    localStorage.setItem("ab-test", variant);
+  }
 
-    // redireciona
-    if (variant === "A") {
-      window.location.href = "/ver1/index.html";
-    } else {
-      window.location.href = "/ver2/index.html";
-    }
-  </script>
+  if (variant === "A") {
+    window.location.href = "ver1/index.html";
+  } else {
+    window.location.href = "ver2/index.html";
+  }
+</script>
 </head>
 <body>
 </body>
