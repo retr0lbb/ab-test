@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DriveElite - Locação de Veículos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Drive<span>Elite</span></h1>
+    <p>Escolha o veículo ideal para sua jornada</p>
+</header>
+
+<main class="container">
+
+    <!-- ── Sports Section ── -->
+    <section class="category">
+        <h2>Carros Esportivos</h2>
+        <div class="carousel-wrapper-sports">
+            <div class="carousel-track-sports" id="carousel-sports">
+
+                <div class="card-sports">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Esportivo Alemão">
+                    <div class="card-sports-info">
+                        <div class="card-sports-text">
+                            <h3>GT Performance</h3>
+                            <p>Uma fusão fantástica entre velocidade e precisão tornam esse carro perfeito para dominar as pistas.</p>
+                        </div>
+                        <div class="card-sports-actions">
+                            <span class="daily-price">R$420/dia</span>
+                            <span class="badge-discount">Até 30% Off</span>
+                            <button class="btn-rent">Alugar Agora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-sports">
+                    <img src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/964/bugatti-tourbillon-with-quipe-pur-sang-package_100964115.jpg" alt="Supercarro">
+                    <div class="card-sports-info">
+                        <div class="card-sports-text">
+                            <h3>Bugatti Chiron</h3>
+                            <p>Experiencie o pináculo do engenharia e potencia em um dos nossos carros mais luxuosos.</p>
+                        </div>
+                        <div class="card-sports-actions">
+                            <span class="daily-price">R$550/dia</span>
+                            <span class="badge-discount">Até 30% Off</span>
+                            <button class="btn-rent">Alugar Agora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-sports">
+                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1200&q=80" alt="Conversível">
+                    <div class="card-sports-info">
+                        <div class="card-sports-text">
+                            <h3>Spider V8</h3>
+                            <p>Sinta a toda a potencia e elegância que um moto4 V8 italiano pode oferecer.</p>
+                        </div>
+                        <div class="card-sports-actions">
+                            <span class="daily-price">R$500/dia</span>
+                            <span class="badge-discount">Até 30% Off</span>
+                            <button class="btn-rent">Alugar Agora</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Daily Section ── -->
+    <section class="category">
+        <h2>Carros do Dia a Dia</h2>
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel" id="carousel-daily">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=300&q=80" alt="Carro Popular">
+                    <h3>Compacto Confort</h3>
+                    <p>Econômico e ágil para a cidade.</p>
+                    <button class="btn-rent">Alugar Agora</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=300&q=80" alt="SUV Familiar">
+                    <h3>SUV Family</h3>
+                    <p>Espaço de sobra para toda a família.</p>
+                    <button class="btn-rent">Alugar Agora</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=300&q=80" alt="Sedan">
+                    <h3>Executive Sedan</h3>
+                    <p>Elegância e conforto para viagens.</p>
+                    <button class="btn-rent">Alugar Agora</button>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
