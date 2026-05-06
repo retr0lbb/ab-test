@@ -11,10 +11,14 @@
     localStorage.setItem("ab-test", variant);
   }
 
+  const basePath = window.location.pathname
+    .replace(/\/$/, '')       // remove barra final
+    .replace(/\/index\.html$/, ''); // remove index
+
   if (variant === "A") {
-    window.location.replace("/ver1/index.html");
+    window.location.href = basePath + "/ver1/index.html";
   } else {
-    window.location.replace("/ver2/index.html");
+    window.location.href = basePath + "/ver2/index.html";
   }
 </script>
 </head>
